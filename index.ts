@@ -15,7 +15,7 @@ app.use("/api/walmart/import", walmartImportListingRouter);
 app.use("/api/alphabroder", alphabroder);
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Hello, TypeScript with Node.js!");
+  res.send("marketp backend running, TypeScript with Node.js!");
 });
 
 app.listen(port, () => {
