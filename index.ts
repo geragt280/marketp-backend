@@ -6,7 +6,7 @@ import walmartImportListingRouter from "./src/methods/marketplaces/walmart-01/im
 import alphabroder from "./src/methods/vendors/alphabroder/index";
 
 const app = express();
-const port = PORT;
+const port = PORT || 3000;
 
 app.use(cors());
 
