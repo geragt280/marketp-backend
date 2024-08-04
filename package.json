@@ -6,8 +6,8 @@
   "scripts": {
     "test": "success",
     "start": "nodemon --exec ts-node ./index.ts --ignore src/services/token.json --ignore uploads",
-    "build:clean": "rimraf dist",
-    "build": "npm run build:clean && tsc",
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
     "serve": "node dist/index.js"
   },
   "keywords": [],
