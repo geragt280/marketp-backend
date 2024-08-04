@@ -4,10 +4,9 @@
   "description": "This side will provide the code for backend of the project which might be implimented on .NET framework",
   "main": "index.ts",
   "scripts": {
-    "test": "success",
     "start": "nodemon --exec ts-node ./index.ts --ignore src/services/token.json --ignore uploads",
-    "clean": "rimraf dist",
-    "build": "npm run clean && tsc",
+    "build": "npm run build:clean && tsc",
+    "build:clean": "rimraf dist",
     "serve": "node dist/index.js"
   },
   "keywords": [],
