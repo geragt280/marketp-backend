@@ -7,7 +7,7 @@
     "test": "success",
     "start": "nodemon --exec ts-node ./index.ts --ignore src/services/token.json --ignore uploads",
     "build": "tsc",
-    "serve": "node dist/index.ts"
+    "serve": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
