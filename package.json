@@ -1,0 +1,42 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "This side will provide the code for backend of the project which might be implimented on .NET framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "success",
+    "start": "nodemon --exec ts-node ./index.ts --ignore src/services/token.json --ignore uploads",
+    "build": "tsc",
+    "serve": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/multer": "^1.4.11",
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fast-csv": "^5.0.1",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "ftp": "^0.3.10",
+    "ftp-srv": "^4.6.3",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/form-data": "^2.5.0",
+    "@types/ftp": "^0.3.36",
+    "@types/node": "^20.12.12",
+    "@types/uuid": "^10.0.0",
+    "nodemon": "^3.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

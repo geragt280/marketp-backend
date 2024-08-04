@@ -1,0 +1,24 @@
+<MPItemFeed xmlns="http://walmart.com/">
+    <MPItem>
+        <sku>12345</sku>
+        <productName>Sample Product 1</productName>
+        <price>
+            <amount>19.99</amount>
+        </price>
+        <category>
+            <department>Electronics</department>
+            <subcategory>Accessories</subcategory>
+        </category>
+    </MPItem>
+    <MPItem>
+        <sku>67890</sku>
+        <productName>Sample Product 2</productName>
+        <price>
+            <amount>29.99</amount>
+        </price>
+        <category>
+            <department>Home</department>
+            <subcategory>Kitchen</subcategory>
+        </category>
+    </MPItem>
+</MPItemFeed>
