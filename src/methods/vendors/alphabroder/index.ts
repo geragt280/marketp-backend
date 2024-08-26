@@ -1,11 +1,16 @@
 import { Router } from "express";
 import ftp from "ftp";
+const {
+  ALPHABRODER_FTP_HOST,
+  ALPHABRODER_FTP_PASS,
+  ALPHABRODER_FTP_USER,
+} = require("../../../../config");
 
 const router = Router();
 
 router.get("/download", (req, res) => {
   const ftpClient = new ftp();
-  const filePath = "/Demo/AllDBInfoALP_Prod.xls"; // Fixed file path
+  const filePath = "/AllDBInfoALP_Prod.xls"; // Fixed file path
   const downloadFileName = "AllDBInfoALP_Prod.xls"; // The name the client will see
 
   ftpClient.on("ready", () => {
@@ -42,9 +47,9 @@ router.get("/download", (req, res) => {
 
   // Connect to the FTP server
   ftpClient.connect({
-    host: "138-128-244-188.cloud-xip.com",
-    user: "alphabroder",
-    password: "alpha123",
+    host: ALPHABRODER_FTP_HOST,
+    user: ALPHABRODER_FTP_USER,
+    password: ALPHABRODER_FTP_PASS,
     secure: true, // This enables TLS/SSL
     secureOptions: { rejectUnauthorized: false }, // This is necessary if the server uses a self-signed certificate
   });
